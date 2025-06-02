@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Delivery | RideX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Send Packages with RideX</h1>
+    </header>
+    <main class="main-content">
+        
+        <!-- Package Delivery Section -->
+        <section class="package-booking-section">
+            <form class="package-form">
+                <div class="input-group">
+                    <label for="pickup">Pickup Location</label>
+                    <input type="text" id="pickup" placeholder="Enter pickup location" required>
+                </div>
+                <div class="input-group">
+                    <label for="dropoff">Dropoff Location</label>
+                    <input type="text" id="dropoff" placeholder="Enter dropoff location" required>
+                </div>
+                <div class="input-group">
+                    <label for="item">Select Item</label>
+                    <select id="item" required>
+                        <option value="" disabled selected>Select an item</option>
+                        <option value="electronics">Electronics (₹20/km)</option>
+                        <option value="washing-machine">Washing Machine (₹35/km)</option>
+                        <option value="fridge">Fridge (₹40/km)</option>
+                        <option value="other">Other (₹15/km)</option>
+                    </select>
+                </div>
+                
+                <!-- New Date and Time fields -->
+                <div class="input-group">
+                    <label for="delivery-date">Select Delivery Date</label>
+                    <input type="date" id="delivery-date" required>
+                </div>
+                <div class="input-group">
+                    <label for="delivery-time">Select Delivery Time</label>
+                    <input type="time" id="delivery-time" required>
+                </div>
+
+                <button type="button" id="see-prices">See Prices</button>
+            </form>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div id="map"></div>
+        </section>
+
+        <!-- Package Results Section -->
+        <section class="results-section">
+            <h2>Package Details</h2>
+            <div id="package-options" class="package-options">
+                <!-- Package options will appear here after "See Prices" is clicked -->
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <p>© 2024 RideX</p>
+    </footer>
+    <script src="package.js"></script>
+    <script async defer src="https://maps.gomaps.pro/maps/api/js?key=AlzaSyPTql93nqT4FwgrWHTjVqypjl2cRZkrXdb&libraries=places&callback=initMap"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,239 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: white;
+    color: black;
+    padding: 1em 2em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Style the Cities button */
+.cities-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.cities-button:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 2em;
+    background-color: black;
+    gap: 2em;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 40%;
+    color: #f0fff0;
+}
+
+.overlay-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.overlay-text p {
+    margin-bottom: 1.5em;
+    font-size: 1.2rem;
+}
+
+.overlay-text .btn {
+    padding: 1em 2em;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.overlay-text .btn:hover {
+    background-color: #1b4fa1;
+    transform: scale(1.05);
+}
+
+/* Signup Section */
+.signup {
+    background-color: #f5f5f5;
+    padding: 2em;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.signup-step {
+    max-width: 30%;
+}
+
+/* Safety Section */
+.safety {
+    padding: 2em;
+    background-color: #fff;
+    text-align: center;
+}
+
+.safety-features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.safety-feature {
+    max-width: 30%;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.register {
+    text-align: center;
+    margin: 2em 0;
+}
+
+/* Form Section */
+.form-container {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin: 1em 0 0.5em;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Success Message */
+.success-message {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 1.2em;
+    padding: 1em;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #f0fff0;
+}
+
+/* Button Style */
+button.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.888em 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+button.btn:hover {
+    background-color: #333;
+}
+
+/* Container for Buttons */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 80%; /* Allow more space for small screens */
+    }
+
+    .signup-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-container {
+        padding: 1.5em;
+        margin: 1.5em auto;
+        max-width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0.5em 0;
+    }
+
+    .footer {
+        padding: 1.5em;
+    }
+}
+

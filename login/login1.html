@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/styles/styles1.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" aria-required="true" required>
+                <small class="error-message" id="email-error"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" aria-required="true" required>
+                <button type="button" id="toggle-password" aria-label="Toggle Password Visibility">👁</button>
+                <small class="error-message" id="password-error"></small>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+            <p id="errorMessage" class="error"></p>
+        </form>
+    </div>
+
+    <script>
+        const API_BASE_URL = "http://localhost:3000";
+
+        document.getElementById("loginForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("errorMessage");
+
+            errorMessage.textContent = ""; // Clear previous error messages
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/login`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email, password }),
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    localStorage.setItem("userToken", data.token);
+                    localStorage.setItem("userName", data.user.name);
+
+                    alert("Login successful!");
+                    window.location.href = "../index.html";
+                } else {
+                    errorMessage.textContent = data.message;
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                errorMessage.textContent = "An error occurred. Please try again.";
+            }
+        });
+
+        // Toggle password visibility
+        document.getElementById("toggle-password").addEventListener("click", () => {
+            const passwordField = document.getElementById("password");
+            passwordField.type = passwordField.type === "password" ? "text" : "password";
+        });
+    </script>
+</body>
+</html>

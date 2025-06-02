@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center - RideX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fffefe;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #007bff;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .contact {
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Help Center - RideX</h1>
+</header>
+
+<div class="container">
+  <h2>Getting Started</h2>
+  <ul>
+    <li><strong>What is RideX?</strong> RideX is a ride-hailing app that connects riders with drivers.</li>
+    <li><strong>How do I sign up?</strong> Visit the <a href="#signup">Sign-Up Page</a> or download the app and follow the instructions.</li>
+    <li><strong>How do I book a ride?</strong> Open the app, enter your locations, choose a ride, and tap "Confirm Ride."</li>
+  </ul>
+
+  <h2>For Riders</h2>
+  <ul>
+    <li><strong>How can I track my ride?</strong> Use the real-time map in the app after booking.</li>
+    <li><strong>How do I cancel a ride?</strong> Tap "Cancel Ride" in the ride summary screen.</li>
+    <li><strong>How do I contact my driver?</strong> Use the in-app messaging or call option.</li>
+  </ul>
+
+  <h2>For Drivers</h2>
+  <ul>
+    <li><strong>How do I register as a driver?</strong> Sign up on the <a href="#driver-signup">Driver Sign-Up Page</a>.</li>
+    <li><strong>How do I accept rides?</strong> Tap "Accept" when a ride request appears.</li>
+    <li><strong>How do I contact support?</strong> Use the "Help" section in the app.</li>
+  </ul>
+
+  <h2>Payments</h2>
+  <ul>
+    <li><strong>What payment methods are supported?</strong> Credit/debit cards, e-wallets, and cash (in some areas).</li>
+    <li><strong>How do I update my payment method?</strong> Go to "Payment Settings" in the app.</li>
+    <li><strong>How do I view receipts?</strong> Check "Ride History" in your account.</li>
+  </ul>
+
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <p>Email: <a href="mailto:support@RideX.com">support@RideX.com</a></p>
+    <p>Phone: +91-800-123-4567</p>
+    
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,370 @@
+/* Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(45deg, #000, #555);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* Booking Section (Ride & Package) */
+.booking-section {
+    flex: 1;
+    min-width: 320px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+}
+
+.ride-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 10px; /* Adjust spacing between buttons */
+}
+
+.ride-options button {
+    flex: 1;
+    padding: 10px;
+    background: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.ride-options .active-option {
+    background: #007bff; /* Standard blue color */
+    color: #fff;
+}
+
+.ride-options button:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Ride Form */
+.ride-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.ride-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.ride-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #f0f8f0; /* Light background color for focus */
+}
+
+.ride-form button {
+    padding: 12px 20px;
+    background: #007bff; /* Standard blue color */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ride-form button:hover {
+    background: #0056b3; /* Darker blue for hover */
+}
+
+/* Package Form */
+.package-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.package-form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.package-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.package-form input:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #f0f8f0;
+}
+
+.package-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.package-form select:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #f0f8f0;
+}
+
+.package-form .radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.package-form .radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.package-form button {
+    padding: 12px 20px;
+    background: #007bff; /* Standard blue color */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.package-form button:hover {
+    background: #0056b3; /* Darker blue for hover */
+}
+
+/* Map Section */
+.map-section {
+    flex: 2;
+    min-width: 400px;
+    height: 450px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.results p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Pickup & Dropoff Styling for Package */
+.package-form .pickup-drop-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.package-form .pickup-drop-section .input-group {
+    flex: 1;
+}
+
+.package-form .pickup-drop-section input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.package-form .pickup-drop-section input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Ride Option Styles */
+.ride-options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ride-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ride-option:hover {
+    background: #f0f0f0;
+}
+
+.ride-option .ride-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ride-option .ride-info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.ride-option .ride-info p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #666;
+}
+
+.ride-option .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Booking Message */
+.booking-message {
+    padding: 20px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #155724;
+    display: none; /* Hidden by default */
+}
+
+.booking-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+/* CSS for confirmation message */
+.confirmation-message {
+    background-color: #007bff; /* Standard blue color */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none; /* Initially hidden */
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Additional styles for package options */
+.package-option {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.package-option:hover {
+    background-color: #e2e6ea;
+}
+
+.package-info h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.package-info p {
+    margin: 5px 0;
+}

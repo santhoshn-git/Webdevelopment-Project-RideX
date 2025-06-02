@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideX Driver Interface</title>
+    <link rel="stylesheet" href="../drive/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Drive</a></li>
+                <li><a href="../drive/RideX cities.pdf" id="cities-link">Cities</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="overlay-text">
+                <h1>Drive when you want, make what you need</h1>
+                <p>Earn on your own schedule.</p>
+                <!-- <button id="register-btn" class="btn"><h3>Get Started</h3></button> -->
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="../assets/images/drive.png" alt="Driver Illustration" class="background-image right-align">
+        </div>
+    </section> 
+
+    <section class="signup">
+        <!-- <h2>Here's what you need to sign up</h2> -->
+        <div class="signup-container">
+            <div class="signup-step">
+                <h3>Requirements</h3>
+                <p>Check your city's requirements for driving.</p>
+            </div>
+            <div class="signup-step">
+                <h3>Documents</h3>
+                <p>Provide your license, registration, and more.</p>
+            </div>
+            <div class="signup-step">
+                <h3>Signup process</h3>
+                <p>Complete your profile to start driving.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="register">
+        <h2>Ready to Drive?</h2>
+        <button id="register-btn" class="btn"><h3>Register</h3></button>
+        
+       
+        <div id="register-form-container" class="form-container" style="display: none;">
+            <form id="register-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                
+                <label for="profile-photo">Upload Profile Photo:</label>
+                <input type="file" id="profile-photo" name="profile-photo" accept="image/*" required>
+                
+                <label for="driving-license">Upload Driving License:</label>
+                <input type="file" id="driving-license" name="driving-license" accept="image/*" required>
+                
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+      
+   
+        <div id="success-message" class="success-message" style="display: none;">
+            <h3>Thank you for registering!</h3>
+            <p>Our team will review your details and get back to you shortly.</p>
+        </div>
+    </section>
+
+    <script src="../drive/script.js"></script>
+    <footer class="footer">
+        <p>© 2024 RideX. All rights reserved.</p>
+    </footer>
+</body>
+</html>
